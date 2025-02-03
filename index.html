@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trello Proyect</title>
+</head>
+
+<body>
+    <header>
+        <a href="">
+            <img src="img/trello.svg" alt="Trello">
+            <h1>Trello</h1>
+        </a>
+
+        <div>
+            <img src="img/person-circle.svg" alt="User">
+            <ul>
+                <li>Configuración</li>
+                <li>Salir</li>
+            </ul>
+        </div>
+    </header>
+        <main>
+            <div class="content-from">
+                <form>
+                    <h2>Iniciar sesion</h2>
+                    <label>
+                        <span>correo</span>
+                        <input type="email" name="email" id="email" required>
+                    </label>
+                    <br>
+                    <label>
+                        <span>contraseña</span>
+                        <input type="password" name="password" id="password" required>
+                    </label>
+                    <button type="submit">Iniciar sesión</button>
+                    <p class="p-error">Error</p>
+                </form>
+
+                <form>
+                    <h2>Registrarse</h2>
+                    <label>
+                        <span>Nombre</span>
+                        <input type="text" name="nombre" id="input-nombre" required minlength="3" maxlength="20">
+                    </label>
+                    <br>
+                    <label>
+                        <span>Apellido</span>
+                        <input type="text" name="apellido" id="input-apellido" required>
+                    </label>
+                    <br>
+                    <label>
+                        <span>Edad</span>
+                        <input type="number" name="edad" id="input-edad" required>
+                    </label>
+                    <br>
+                    <label>
+                        <span>Correo</span>
+                        <input type="email" name="email" id="input-email" required>
+                    </label>
+                    <br>
+                    <label>
+                        <span>Contraseña</span>
+                        <input type="password" name="password" id="input-password" required>
+                    </label>
+                    <br>
+                    <label>
+                        <span>Confirmar contraseña</span>
+                        <input type="password" name="password" id="cofirm-password" required>
+                    </label>
+                    <button type="button">Registrarse</button>
+                    <p class="p-error">Error</p>
+                </form>
+
+                <form>
+                    <h2>Foto de perfil</h2>
+                    <img src="img/person-circle.svg" alt="User">
+                    <button type="button">Cambiar Foto</button>
+                    <div id="botones-user">
+                        <button>Cancelar</button>
+                        <button>Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
